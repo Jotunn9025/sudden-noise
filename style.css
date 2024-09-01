@@ -1,0 +1,42 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+    position: relative;
+}
+
+form {
+    position: relative;
+    width: 600px;
+    height: 600px;
+}
+
+.mic {
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transform-origin: center;
+}
+
+.mic:nth-child(1) { transform: rotate(0deg) translateY(-250px) rotate(0deg); }
+.mic:nth-child(2) { transform: rotate(60deg) translateY(-250px) rotate(-60deg); }
+.mic:nth-child(3) { transform: rotate(120deg) translateY(-250px) rotate(-120deg); }
+.mic:nth-child(4) { transform: rotate(180deg) translateY(-250px) rotate(-180deg); }
+.mic:nth-child(5) { transform: rotate(240deg) translateY(-250px) rotate(-240deg); }
+.mic:nth-child(6) { transform: rotate(300deg) translateY(-250px) rotate(-300deg); }
+
+.mic img {
+    height: 100px;
+    width: 100px;
+}
+
+form {
+    transform: translateY(30vh);
+}

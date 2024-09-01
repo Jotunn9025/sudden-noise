@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File Upload with Preview</title>
+</head>
+<body>
+    <form id="uploadForm" action="http://localhost:5000/upload" method="POST" enctype="multipart/form-data">
+        <div class="mic" id="mic1">
+            <img src="image1.png" id="0">
+            <label for="file1">File 1:</label>
+            <input type="file" name="file1" accept="audio/*" onchange="previewAudio(this, 'audio1')"><br>
+            <audio id="audio1" controls style="display:none;"></audio><br><br>
+            <input type="hidden" name="mic1" value="mic1">
+        </div>
+        <div class="mic" id="mic2">
+            <img src="image1.png" id="1">
+            <label for="file2">File 2:</label>
+            <input type="file" name="file2" accept="audio/*" onchange="previewAudio(this, 'audio2')"><br>
+            <audio id="audio2" controls style="display:none;"></audio><br><br>
+            <input type="hidden" name="mic2" value="mic2">
+        </div>
+        <div class="mic" id="mic3">  
+            <img src="image1.png" id=2>  
+            <label for="file3">File 3:</label>
+            <input type="file" name="file3" accept="audio/*" onchange="previewAudio(this, 'audio3')"><br>
+            <audio id="audio3" controls style="display:none;"></audio><br><br>
+            <input type="hidden" name="mic3" value="mic3">
+        </div>
+        <div class="mic" id="mic4">  
+            <img src="image1.png" id="3">  
+            <label for="file4">File 4:</label>
+            <input type="file" name="file4" accept="audio/*" onchange="previewAudio(this, 'audio4')"><br>
+            <audio id="audio4" controls style="display:none;"></audio><br><br>
+            <input type="hidden" name="mic4" value="mic4">
+        </div>
+        <div class="mic" id="mic5">  
+            <img src="image1.png" id="4">  
+            <label for="file5">File 5:</label>
+            <input type="file" name="file5" accept="audio/*" onchange="previewAudio(this, 'audio5')"><br>
+            <audio id="audio5" controls style="display:none;"></audio><br><br>
+            <input type="hidden" name="mic5" value="mic5">
+        </div>
+        <div class="mic" id="mic6">  
+            <img src="image1.png" id="5">  
+            <label for="file6">File 6:</label>
+            <input type="file" name="file6" accept="audio/*" onchange="previewAudio(this, 'audio6')"><br>
+            <audio id="audio6" controls style="display:none;"></audio><br><br>
+            <input type="hidden" name="mic6" value="mic6">
+        </div>    
+        <input type="button" value="Upload Files" onclick="submitForm()">
+    </form>
+
+    <script src="script.js"></script>
+</body>
+</html> 
